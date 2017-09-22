@@ -243,13 +243,7 @@ def build_laplacian(C):
     W = np.diag(1.0/W)
     L = W.dot(C)    
     return L
-
-def compute_eigen_gap(L, K):
-    _,eigsL,_ = svds(L,K+1)
-    gap = eigsL[1]/eigsL[0]
-    return gap
-    
-        
+ 
         
 def test_face(Img, Label, CAE, num_class):       
     
