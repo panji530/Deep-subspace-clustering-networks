@@ -42,7 +42,7 @@ class ConvAE(object):
         Coef = weights['Coef']         
         z_c = tf.matmul(Coef,z)    
         self.Coef = Coef        
-        latent_c = tf.reshape(z_c, tf.shape(latent)) # petential problem here
+        latent_c = tf.reshape(z_c, tf.shape(latent)) 
         self.z = z       
         
         self.x_r = self.decoder(latent_c, weights, shape)                
