@@ -101,7 +101,7 @@ class ConvAE(object):
     # Building the encoder
     def encoder(self,x, weights):
         shapes = []
-        # Encoder Hidden layer with sigmoid activation #1
+        # Encoder Hidden layer with relu activation #1
         shapes.append(x.get_shape().as_list())
         layer1 = tf.nn.bias_add(tf.nn.conv2d(x, weights['enc_w0'], strides=[1,2,2,1],padding='SAME'),weights['enc_b0'])
         layer1 = tf.nn.relu(layer1)
@@ -114,7 +114,7 @@ class ConvAE(object):
         return  layer3, shapes
     # Building the decoder
     def decoder(self,z, weights, shapes):
-        # Encoder Hidden layer with sigmoid activation #1
+        # Encoder Hidden layer with relu activation #1
         shape_de1 = shapes[2]
         layer1 = tf.add(tf.nn.conv2d_transpose(z, weights['dec_w0'], tf.stack([tf.shape(self.x)[0],shape_de1[1],shape_de1[2],shape_de1[3]]),\
          strides=[1,2,2,1],padding='SAME'),weights['dec_b0'])
