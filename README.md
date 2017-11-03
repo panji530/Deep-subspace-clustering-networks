@@ -8,8 +8,8 @@ Due to several requests, an unpolished version of our codes is released here (Ca
 
 The key thing to take care of during pre-training is early-stop, which means you need stop training once the reconstructed images are reasonably good (visually). This would make the later fine-tuning step easier.
 
-We also noted that there is an issue of numerical instablility for the current version due to the non-uniqueniss of SVD. Any suggestions for resolving this are welcome. +
+We also noted that there is an issue of numerical instablility for the current version due to the non-uniqueniss of SVD. Any suggestions for resolving this are welcome. 
 
 Dependencies:
 
-Tensorflow, numpy, sklearn, munkres, scipy
+Tensorflow, numpy, sklearn, munkres, scipy.
