@@ -227,7 +227,7 @@ def post_proC(C, K, d, alpha):
 	L = 0.5 * (L + L.T)	
 	spectral = cluster.SpectralClustering(n_clusters=K, eigen_solver='arpack', affinity='precomputed',assign_labels='discretize')
 	spectral.fit(L)
-	grp = spectral.fit_predict(L) 
+	grp = spectral.fit_predict(L) + 1 
 	return grp, L
 
 def err_rate(gt_s, s):
