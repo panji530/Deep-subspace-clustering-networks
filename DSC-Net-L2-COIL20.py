@@ -223,7 +223,7 @@ batch_size_test = num_sa * num_class
 
 
 iter_ft = 0
-ft_times = 40
+ft_times = 30
 display_step = ft_times
 alpha = 0.04
 learning_rate = 1e-3
