@@ -13,3 +13,7 @@ We also noted that there is an issue of numerical instablility for the current v
 Dependencies:
 
 Tensorflow, numpy, sklearn, munkres, scipy.
+
+License
+
+For academic usage, the code is released under the permissive BSD license. For any commercial purpose, please contact the authors.
