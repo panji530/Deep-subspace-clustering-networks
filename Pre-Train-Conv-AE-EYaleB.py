@@ -1,5 +1,4 @@
-# This work was done in the University of Adelaide.
-
+# This work was done while the first author was in the University of Adelaide. Copyright reserved.
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
