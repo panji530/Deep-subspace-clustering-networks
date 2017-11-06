@@ -1,3 +1,4 @@
+# This work was done while the first author was in the University of Adelaide. Copyright reserved.
 from __future__ import division, print_function, absolute_import
 
 import tensorflow as tf
