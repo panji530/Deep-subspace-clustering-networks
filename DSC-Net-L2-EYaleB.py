@@ -1,3 +1,4 @@
+# This work was done while the first author was in the University of Adelaide. Copyright reserved.
 import tensorflow as tf
 import numpy as np
 from tensorflow.contrib import layers
