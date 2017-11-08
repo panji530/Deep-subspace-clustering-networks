@@ -1,4 +1,6 @@
-# This work was done while the first author was in the University of Adelaide. Copyright reserved.
+# Code Authors: Pan Ji,     University of Adelaide,         pan.ji@adelaide.edu.au
+#               Tong Zhang, Australian National University, tong.zhang@anu.edu.au
+# Copyright Reserved!
 from __future__ import division, print_function, absolute_import
 
 import tensorflow as tf
