@@ -1,4 +1,6 @@
-# This work was done while the first author was in the University of Adelaide. Copyright reserved.
+# Code Authors: Pan Ji,     University of Adelaide,         pan.ji@adelaide.edu.au
+#               Tong Zhang, Australian National University, tong.zhang@anu.edu.au
+# Copyright Reserved!
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
