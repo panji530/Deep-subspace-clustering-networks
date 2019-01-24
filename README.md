@@ -14,10 +14,11 @@ We also noted that there is an issue of numerical instablility for the current v
 
 If you use L-2 regularization on C, the diagonal constraint (diag(C)=0) is not necessary (cf. [this paper](https://www.researchgate.net/publication/261989058_Efficient_Dense_Subspace_Clustering)). If you use L-1 regularization, the diagonal constraint is then necessary to avoid trivial solutions (cf. [this paper](https://arxiv.org/abs/1203.1005)).
 
-The code released here is for L-2 regularization (i.e., DSC-Net-L2), so there is no diagonal constraint on C. However, implementing the diagonal constraint is easy. Assuming the latent representation after the encoder is Z and before passing to the decoder, you do:
+The code released here is for L-2 regularization (i.e., DSC-Net-L2), so there is no diagonal constraint on C. However, implementing the diagonal constraint is easy. Assuming the latent representation after the encoder is Z and before passing to the decoder, you can do a simple trick:
 ```
 tf.matmul((C-tf.diag(tf.diag_part(C))),Z)
 ```
+where the diagonal of C is set to zero.
 
 ## Dependencies
 
