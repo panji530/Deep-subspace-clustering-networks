@@ -10,12 +10,15 @@ The key thing to take care of during pre-training is early-stopping, which means
 
 We also noted that there is an issue of numerical instablility for the current version due to the non-uniqueness of SVD. Any suggestions for resolving this are welcome. 
 
-Dependencies:
+## Diagonal constraint of C
+
+## Dependencies:
 
 Tensorflow, numpy, sklearn, munkres, scipy.
 
-License
+## License
 
 For academic usage, the code is released under the permissive BSD license. For any commercial purpose, please contact the authors.
 
-Contact: Pan Ji, peterji1990@gmail.com
+## Contact
+Pan Ji, peterji1990@gmail.com
