@@ -24,7 +24,7 @@ where the diagonal of C is set to zero.
 
 Tensorflow, numpy, sklearn, munkres, scipy.
 
-The code has been tested on Tensorflow 1.1 - Tensorflow 1.4; later versions may lead to slight different results.
+The code has been tested on Tensorflow 1.1 - Tensorflow 1.4; later versions may lead to different results.
 
 ## License
 
