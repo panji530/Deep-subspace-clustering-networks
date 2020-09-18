@@ -31,4 +31,4 @@ The code has been tested on Tensorflow 1.1 - Tensorflow 1.4; later versions may 
 For academic usage, the code is released under the permissive BSD license. For any commercial purpose, please contact the authors.
 
 ## Contact
-Pan Ji, peterji1530@gmail.com
+Pan Ji, peterji530@gmail.com
